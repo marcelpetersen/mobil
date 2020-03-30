@@ -744,9 +744,6 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: target.offset().top - topOffset
       }, 600, function() {
-        grecaptcha.ready(function() {
-          grecaptcha.execute("6LeHSagUAAAAACPB5JfFS9ihSEbW-PJHqbBjlDgR", {action: "scrollclick"})
-        });
         // Callback after animation
       });
       var eventTarget = $(event.target);
